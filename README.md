@@ -34,3 +34,15 @@ change master to master_host='192.168.100.37',master_port=3308,master_user='sync
 ### 其中一方down机处理方法
 
 需要先`reset slave` 然后`start slave`才能恢复正常
+
+### 锁表
+
+同步之前，最好是保证那个数据的数据一致，主数据库处于只读状态
+```sql
+#锁定数据库所有表，只能读，不能写
+FLUSH TABLES WITH READ LOCK;
+#解锁,直接关闭客户端session，也可以解锁。
+unlock tables;
+
+```
+
