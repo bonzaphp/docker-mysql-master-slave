@@ -30,3 +30,7 @@ change master to master_host='192.168.100.37',master_port=3308,master_user='sync
 ```
 
 == 如果是双主结构，只需要在配置关联哪里，在两台服务器相互关联为对方的主服务，就好了 ==
+
+### 其中一方down机处理方法
+
+需要先`reset slave` 然后`start slave`才能恢复正常
