@@ -1,0 +1,85 @@
+[mysqld]
+#log-bin设置此参数表示启用binlog功能，并指定路径名称
+log-bin = mysql-bin
+
+#server-id给数据库服务的唯一标识
+server-id = 168
+
+relay-log              = slave-relay-bin
+relay-log-index        = slave-relay-bin.index
+lower_case_table_names = 1
+
+
+#binlog文件的大小
+max_binlog_size = 1G
+
+replicate-ignore-db = mysql #忽略不同步主从的数据库
+replicate-ignore-db = information_schema
+replicate-ignore-db = performance_schema
+replicate-ignore-db = test
+
+
+
+#强制gtid一致性，开启gtid时必须开启该项，并且最好位于gtid-mode=on之前
+enforce-gtid-consistency=ON
+#开启gtid模式
+gtid-mode=on
+master-info-repository=TABLE
+relay-log-info-repository=TABLE
+sync-master-info=1
+slave-parallel-workers=0
+binlog-checksum=CRC32
+master-verify-checksum=1
+slave-sql-verify-checksum=1
+binlog-rows-query-log_events=1
+
+
+
+#binlog文件的大小
+max_binlog_size = 1G
+
+
+#需要复制的数据库名，如果复制多个数据库，重复设置这个选项即可                  
+binlog-do-db = crm_rbac
+#将从服务器从主服务器收到的更新记入到从服务器自己的二进制日志文件中                 
+log-slave-updates = true                       
+#控制binlog的写入频率。每执行多少次事务写入一次(这个参数性能消耗很大，但可减小MySQL崩溃造成的损失) 
+#sync_binlog = 1                    
+#这个参数一般用在主主同步中，用来错开自增值, 防止键值冲突
+auto_increment_offset = 2 
+##这个参数一般用在主主同步中，用来错开自增值, 防止键值冲突
+auto_increment_increment = 2
+##将函数复制到slave  
+#log_bin_trust_function_creators = 1       
+#还可以显示 设置不同步的数据库：不同步mysql库和test
+
+#relay-log = relay-bin
+#relay-log-index = slave-relay-bin.index
+binlog-ignore-db = mysql
+#binlog-ignore-db = test
+
+##二进制日志自动删除的天数，默认值为0,表示“没有自动删除”，启动时和二进制日志循环时可能删除  
+expire_logs_days=30
+
+#binlog_cache_size此参数表示binlog使用的内存大小
+binlog_cache_size=1M
+
+binlog_format = row
+binlog_row_image = full
+
+
+explicit_defaults_for_timestamp=true
+
+[client]
+port = 3306
+#socket = /tmp/mysql.sock
+default-character-set = utf8mb4
+#地址
+host = 127.0.0.1
+#用户
+user = root
+#密码
+password = Wchh73cHsgnsZ4onIZyc
+
+[mysqldump] 
+password=Wchh73cHsgnsZ4onIZyc
