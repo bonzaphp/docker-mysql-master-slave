@@ -40,7 +40,7 @@ max_binlog_size = 1G
 
 
 #需要复制的数据库名，如果复制多个数据库，重复设置这个选项即可                  
-binlog-do-db = crm_rbac
+binlog-do-db = bonza
 #将从服务器从主服务器收到的更新记入到从服务器自己的二进制日志文件中                 
 log-slave-updates = true                       
 #控制binlog的写入频率。每执行多少次事务写入一次(这个参数性能消耗很大，但可减小MySQL崩溃造成的损失) 
@@ -79,7 +79,7 @@ host = 127.0.0.1
 #用户
 user = root
 #密码
-password = Wchh73cHsgnsZ4onIZyc
+password = Wchh73****Z4onIZyc
 
 [mysqldump] 
-password=Wchh73cHsgnsZ4onIZyc
+password=Wchh73****Z4onIZyc

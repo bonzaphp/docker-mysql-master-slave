@@ -13,11 +13,15 @@
 4. 连接MySQL相应的服务，在要作为从机的服务上执行。
 
 ```sql
-# 新建同步帐号
+# 新建同步帐号,用于连接MySQL主服务，所以应该在主服务上执行
 grant replication slave on *.* to 'sync'@'%' identified by 'sync';  
 # 刷新权限缓存
 flush privileges 
-# 配置和主服务关联
+
+# 在主服务上执行
+show master status;
+
+# 配置和主服务关联，在从机上执行，binlog日志和logpos，从上一步结果中获取
 change master to master_host='${host}',master_port='${port}',master_user= '${master_user}' ,master_password='${master_password}',master_log_file='${master_log_file}',master_log_pos='${master_log_pos}';
 # 启动从服务
 start slave

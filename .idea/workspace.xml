@@ -4,6 +4,8 @@
     <list default="true" id="1af872be-c074-4a2a-8a40-450f6b5fead8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/conf.d/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/conf.d/my.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/conf.d/my.cnf.slave" beforeDir="false" afterPath="$PROJECT_DIR$/conf/conf.d/my.cnf.slave" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,14 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/conf.d/my.cnf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1380">
+              <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="802">
-                <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/conf/conf.d/my.cnf.slave">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -38,11 +46,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/conf/conf.d/my.cnf" />
-        <option value="$PROJECT_DIR$/conf/conf.d/my.cnf.slave" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/conf/conf.d/my.cnf" />
+        <option value="$PROJECT_DIR$/conf/conf.d/my.cnf.slave" />
       </list>
     </option>
   </component>
@@ -64,6 +72,17 @@
             <path>
               <item name="slave" type="b2602c69:ProjectViewProjectNode" />
               <item name="slave" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slave" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slave" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="conf.d" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -107,7 +126,9 @@
       <updated>1573540787770</updated>
       <workItem from="1573540789206" duration="1316000" />
       <workItem from="1573545186762" duration="143000" />
-      <workItem from="1573548146730" duration="1354000" />
+      <workItem from="1573548146730" duration="2034000" />
+      <workItem from="1573635856619" duration="366000" />
+      <workItem from="1574841655117" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="说明完善">
       <created>1573542846185</created>
@@ -123,11 +144,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573545304180</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="锁表">
+      <created>1573551766056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573551766056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3290000" />
+    <option name="totallyTimeSpent" value="4660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
@@ -159,24 +187,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="说明完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="说明完善" />
+    <MESSAGE value="锁表" />
+    <option name="LAST_COMMIT_MESSAGE" value="锁表" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/conf/backup/my.cnf" />
-    <entry file="file://$PROJECT_DIR$/conf/conf.d/my.cnf.slave">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.d/my.cnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -201,10 +216,24 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="802">
-            <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <first_editor relative-caret-position="630">
+            <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.d/my.cnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.d/my.cnf.slave">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
         </state>
       </provider>
     </entry>
