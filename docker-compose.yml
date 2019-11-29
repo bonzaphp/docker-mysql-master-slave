@@ -7,7 +7,7 @@ services:
       restart: always
       hostname: 'db.example.com'
       environment:
-        MYSQL_ROOT_PASSWORD: Wchh73cHsgnsZ4onIZyc  # root账户的密码
+        MYSQL_ROOT_PASSWORD: Wchh73****Z4onIZyc  # root账户的密码
       ports:
         - 3308:3306
       volumes:
